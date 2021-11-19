@@ -56,6 +56,10 @@ class App extends React.Component {
         );
     }
 
+    componentDidMount() {
+        document.title = "facere cito";
+    }
+
     handleClearClick() {
         window.localStorage.setItem('todos', JSON.stringify([]));
         window.location.reload();
